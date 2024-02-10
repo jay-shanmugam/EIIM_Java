@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Management System</title>
+        <link rel="stylesheet" href="styles/doc_login.css">
+        <style class="back">
+            body{
+                background-image: url("img_docpage.jpeg");
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .heading{
+			    color: rgb(0, 0, 0);
+			    font-size: 40px;
+			    margin-bottom: 0px;
+			    margin-top: 70px;
+			    margin-left: 750px;
+			}
+			
+			button{
+			    font-size: 17px;
+			    cursor:pointer;
+			    height: 38px;
+			}
+			.login{
+			    background-color: rgb(205, 1, 1);
+			    color: white;
+			    border: none;
+			    width: 85px;
+			    border-radius: 4%;
+			    transition: opacity 0.15s;
+			    margin-left: 120px;
+			    display: inline-block;
+			}
+			.login:hover{
+			    opacity: 0.7;
+			}
+			.login:active{
+			    opacity: 0.5;
+			}
+			
+			input{
+			    font-size: 25px;
+			    margin: 0px;
+			    border: none;
+			    border-radius: 4px;
+			    display: block;
+			    padding: 5px;
+			}
+			.username{
+			    margin-bottom: 20px;
+			    margin-top: 7px;
+			}
+			.password{
+			    margin-bottom: 40px;
+			}
+			::placeholder{
+			    opacity:0.9;
+			    font-size:22px;
+			}
+			
+			.body-pos{
+			    margin-top:120px;
+			    margin-left: 800px;
+			    display: block;
+			}
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">DOCTOR LOGIN PAGE</h1>
+        <div class="body-pos">
+            <input class="username" type="text" placeholder="username">
+            <input class="password" type="text" placeholder="password">
+            <a href="#"> <button class="login">Login</button> </a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hospital Management System</title>
+        <style>
+            body{
+                background-image: url("img_homepage.jpeg");
+                background-size: cover;
+            }
+            .head{
+			    font-size: large;
+			    font-weight: bold;
+			    color:rgb(141, 219, 131);
+			    display: block;
+			    margin-left: 300px;
+			    margin-top: 40px;
+			}
+			
+			div{
+			    display: inline-block;
+			}
+			
+			img{
+			    height: 250px;
+			    margin-left: 100px;
+			    border-radius: 500px;
+			    margin-bottom: 1px;
+			    cursor: pointer;
+			    vertical-align: top;
+			    opacity: 0.95;
+			}
+			
+			h2{
+			    height: 21px;
+			    color:aliceblue;
+			    width: 120px;
+			    cursor: pointer;
+			    vertical-align: top;
+			}
+			
+			.pat-img{
+			    margin-top: 80px;
+			    width: 290px;
+			}
+			.doc-img{
+			    width: 276px;
+			}
+			.admin-img{
+			    width: 285px;
+			}
+			
+			.pat-text{
+			    margin-left: 195px;
+			    margin-top: 6px;
+			}
+			.doc-text{
+			    margin-left: 185px;
+			    margin-top: 6px; 
+			}
+			.admin-text{
+			    margin-left: 190px;
+			    margin-top: 1px;
+			}
+			
+			.pat-img:hover,
+			.pat-text:hover,
+			.doc-img:hover,
+			.doc-text:hover,
+			.admin-img:hover,
+			.admin-text:hover{
+			    opacity: 0.8;
+			}
+        </style>
+        <link rel="stylesheet" href="styles/homepage.css">
+    </head>
+    <body>
+        <div class="head"><h1>WELCOME TO HOSPITAL WEBPAGE</h1></div>
+        <div>
+            <div>
+                <a href="p_login.jsp">
+                    <img class="pat-img" src="img_pat.jpeg">
+                    <h2 class ="pat-text">PATIENT</h2>
+                </a>
+            </div>
+            <div>
+                <a href="doc_login.html">
+                    <img class="doc-img" src="img_doc.jpeg">
+                    <h2 class ="doc-text">DOCTOR</h2>
+                </a>
+            </div>
+            
+            <div>
+            	<a href="p_login.jsp">
+            		<img class="admin-img" src="img_admin.jpeg">
+                	<h2 class ="admin-text">ADMIN</h2>
+            	</a>
+            </div>
+            
+        </div>
+    </body>
+</html>
