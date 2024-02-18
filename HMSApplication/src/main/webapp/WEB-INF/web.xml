@@ -39,4 +39,14 @@
     <servlet-name>InsertDatabase</servlet-name>
     <url-pattern>/InsertDatabase</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InsertDocData</display-name>
+    <servlet-name>InsertDocData</servlet-name>
+    <servlet-class>model.InsertDocData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertDocData</servlet-name>
+    <url-pattern>/InsertDocData</url-pattern>
+  </servlet-mapping>
 </web-app>

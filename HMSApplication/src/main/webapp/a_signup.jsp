@@ -126,7 +126,9 @@
                 <div class="form-group">
                 	
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" 
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@@$!%*?&])[A-Za-z\d@@$!%*?&]{8,}"
+                	title="Password must have at least one small letter, one capital letter, one number, one special character (@@, $, !, %, *, ?, or &), and a minimum length of 5 characters." required> 
                 </div>
             </div>
 
@@ -134,4 +136,4 @@
         </form>
     </div>
 </body>
-</html>    
+</html>  

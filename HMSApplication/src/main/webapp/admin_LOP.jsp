@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html lang="en">
  
@@ -78,12 +79,49 @@
 	</nav>
  
     <!-- Page Content -->
-<div class="container">
-<h2>Welcome, Admin!</h2>
- 
-        <!-- Add your content here -->
- 
-    </div>
+	<div class="container">
+	<h2>List of Patients</h2>
+	<table class="table table-bordered">
+	<thead>
+	<tr>
+		<th>Name</th>
+        <th>DOB</th>
+        <th>Phone Number</th>
+        <th>Username</th>
+        <th>Password</th>
+	</tr>
+	</thead>
+	<tbody>
+	<% 
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hms","root","Aspire@123");
+            PreparedStatement pst=con.prepareStatement("SELECT * FROM users");
+            ResultSet rs=pst.executeQuery();
+            
+            while(rs.next()) {
+			     %>
+			     <tr>
+			     	<td><%= rs.getString("first_name") %></td>
+			        <td><%= rs.getString("DOB") %></td>
+			        <td><%= rs.getString("phone_number") %></td>
+			        <td><%= rs.getString("username") %></td>
+			        <td><%= rs.getString("passwd") %></td>
+			        <!-- Add more table cells if needed -->
+			    </tr>
+				
+				<!-- Add more rows as needed -->
+				
+				<% 
+            }
+            con.close();
+        } catch(Exception e) {
+            out.println(e);
+        } 
+        %>
+    </tbody>
+	</table>
+	</div>
  
     <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

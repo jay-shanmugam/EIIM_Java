@@ -83,9 +83,7 @@ public class LoginServlet extends HttpServlet {
 				 //response.sendRedirect("user.jsp");
 			}
 			else if(username.equals(un) && password.equals(pwd)) {
-					RequestDispatcher reqdis = request.getRequestDispatcher("/AdminServlet");
-					HttpSession session=request.getSession();
-					session.setAttribute("user_",username);
+					RequestDispatcher reqdis = request.getRequestDispatcher("/admin.jsp");
 					reqdis.forward(request, response);
 				}
 			else

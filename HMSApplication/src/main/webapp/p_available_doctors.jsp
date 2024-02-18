@@ -87,7 +87,6 @@
 	<li class="nav-item">
 	<a class="nav-link" href="#">About Us</a>
 	</li>
-	</li>
 	<li class="nav-item">
 	<a class="nav-link" href="a_logout.html">Logout</a>
 	</li>
